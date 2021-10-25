@@ -91,4 +91,4 @@ TODO:
   
 3. Control 
 
-  a. It woulb be perfect if we can turn off the oven remotely.
+  a. It would be perfect if we can turn off the oven remotely.
