@@ -62,7 +62,7 @@ Section 2.
 
 2. Write a java server to accept incoming requests and write the data into DB
 
-      Use Springboot to quickly create a web server to listen to port 8080. Coding.
+      Use Springboot to quickly create a web server to listen to port 8080. check the code in miniservice
 
       Run server: nohup java -Xms1024M -jar miniservices-1.0-SNAPSHOT.jar &
    
