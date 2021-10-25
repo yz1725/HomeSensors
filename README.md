@@ -4,8 +4,12 @@ Section 1:
 
 1. Read Temperature Data via the sensor using PI using Python
 
+      https://circuitdigest.com/microcontroller-projects/iot-based-contactless-body-temperature-monitoring-using-raspberry-pi-with-camera-and-email-alert
+   
 2. Send out temperature data to google server(see section 2)
 
+      monitor.py will read the data from the sensor and sends the data to the server using requests library.
+      
 Section 2. 
 
 1. Get an google server. 
