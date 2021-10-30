@@ -10,6 +10,8 @@ Section 1:
 
       monitor.py will read the data from the sensor and sends the data to the server using requests library.
       
+3. Set up Cron job to trigger the sensor to read the temperature every minute and send the data to the google server.
+      
 Section 2. 
 
 1. Get an google server. 
