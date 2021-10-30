@@ -84,6 +84,24 @@ Section 2.
     Currently the if target temperature is 10 degrees higher than ambient temperature or if the target temperature is >= 37c, we will trigger the notification process.
    
 
+4. install node.js and create a single page app
+
+    sudo apt-get update
+    
+    sudo apt-get install nodejs
+    
+    sudo apt-get install npm
+   
+    sudo npm install -g npm
+    
+    sudo npm i -g npm-upgrade
+    
+    npx create-react-app home-sensors
+    
+    npm install --save react-chartjs-2 chart.js
+
+
+
 Section 4. 
 
 Server monitors the status/data of the temperatures. Whenever there is an alarm triggered, the program should call mom's cell phone and send out the txt.
