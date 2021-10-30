@@ -38,6 +38,8 @@ public class TemperatureSensorController {
          */
         temperatureSensorHandler.createTemperatureRecord(request.getTarget(), request.getAmbient(), request.getTimeCollected(), "");
 
+        temperatureSensorHandler.notificationCheck(request.getTarget(), request.getAmbient());
+
         TemperatureSensorCreateResponse response = new TemperatureSensorCreateResponse();
         response.setId(request.getId());
         response.setResult("SUCCESS");
@@ -45,10 +47,5 @@ public class TemperatureSensorController {
 
         return new ResponseEntity(response, HttpStatus.OK);
     }
-
-//    @GetMapping("/temperature/list")
-//    public ResponseEntity<HttpBaseResponse> listTemperatures(@RequestBody(required=false) ReviewListRequest request) {
-//        return null;
-//    }
 
 }
