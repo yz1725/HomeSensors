@@ -75,8 +75,12 @@ Section 2.
 
       Run server: nohup java -Xms1024M -jar miniservices-1.0-SNAPSHOT.jar &
    
+3. To notify the family member when abnormal event found, we need to use twilio service by sending out the sms and call out to mom's phone.
+      Step 1. Get a trial account to get the SID and token
+      Step 2. Add code to send out sms and calls, sample code: https://www.twilio.com/docs/libraries/java
 
-Section 3. 
+
+Section 4. 
 
 Server monitors the status/data of the temperatures. Whenever there is an alarm triggered, the program should call mom's cell phone and send out the txt.
 
