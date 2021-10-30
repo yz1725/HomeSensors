@@ -2,7 +2,7 @@
 
 Section 1:
 
-1. Read Temperature Data via the sensor using PI using Python
+1. Read Temperature Data via the sensor using Raspberry PI using Python
 
       https://circuitdigest.com/microcontroller-projects/iot-based-contactless-body-temperature-monitoring-using-raspberry-pi-with-camera-and-email-alert
    
@@ -10,7 +10,10 @@ Section 1:
 
       monitor.py will read the data from the sensor and sends the data to the server using requests library.
       
-3. Set up Cron job to trigger the sensor to read the temperature every minute and send the data to the google server.
+3. Set up Cron job in to trigger the sensor to read the temperature every single minute and send the data to the google server.
+
+      * * * * * python /home/pi/sensor/monitor.py
+
       
 Section 2. 
 
