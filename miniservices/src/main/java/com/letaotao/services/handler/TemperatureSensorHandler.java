@@ -48,6 +48,15 @@ public class TemperatureSensorHandler {
         temperatureSensorsRepository.save(temperatureSensorModel);
     }
 
+    public List<TemperatureSensorModel> getLatestTempetures(){
+        List<TemperatureSensorModel> result = temperatureSensorsRepository.getLatestTemperatures();
+        for (TemperatureSensorModel t: result){
+            LogUtil.info(log, "target: "+t.getTarget()+" - ambient: "+t.getAmbient());
+
+        }
+        return result;
+    }
+
     public void updateResult(TemperatureSensorModel temperatureSensorModel){
         temperatureSensorsRepository.save(temperatureSensorModel);
     }
