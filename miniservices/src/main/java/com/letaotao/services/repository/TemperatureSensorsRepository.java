@@ -22,4 +22,10 @@ public interface TemperatureSensorsRepository extends JpaRepository<TemperatureS
     TemperatureSensorModel selectByIdForUpdate(@Param("id") String id);
 
     TemperatureSensorModel queryById(int id);
+    @Query(nativeQuery = true,
+            value = "SELECT * " +
+                    " FROM temperature_sensors " +
+                    " order by id desc limit 30"
+    )
+    List<TemperatureSensorModel> getLatestTemperatures();
 }
