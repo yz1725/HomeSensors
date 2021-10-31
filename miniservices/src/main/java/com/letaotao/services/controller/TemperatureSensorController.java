@@ -48,4 +48,21 @@ public class TemperatureSensorController {
         return new ResponseEntity(response, HttpStatus.OK);
     }
 
+    @GetMapping("/temperature/latest")
+    @CrossOrigin(origins = {"http://34.127.33.28:3000", "http://localhost:3000", "http://127.0.0.1:3000"})
+    public ResponseEntity<HttpBaseResponse> latestTemperatures() {
+
+        LogUtil.info(log, "get the latest temperature : ");
+
+        List<TemperatureSensorModel> content = temperatureSensorHandler.getLatestTempetures();
+
+        LogUtil.info(log, "get the latest temperature: " + content.size());
+
+        TemperatureListResponse response = new TemperatureListResponse();
+        response.setContent(content);
+        response.setResult("SUCCESS");
+        response.setMsg("SUCCESS");
+
+        return new ResponseEntity(response, HttpStatus.OK);
+    }
 }
