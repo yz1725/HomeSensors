@@ -127,3 +127,7 @@ TODO:
 3. Control 
 
   a. It would be perfect if we can turn off the oven remotely.
+  
+  
+  <img width="1058" alt="Screen Shot 2022-05-02 at 11 59 41 AM" src="https://user-images.githubusercontent.com/10539955/166308631-19dbe52b-274e-456f-8d9b-98c3259d7511.png">
+
